@@ -5,7 +5,9 @@
           id="taskForm"
           class="block w-100" v-show="getFormFocus()"
           v-on:submit.prevent="pushTask(taskName)">
+
       <hr class="divider">
+
       <div class="flex g-1 w-100">
         <input type="text"
                id="taskName"
@@ -13,7 +15,8 @@
                v-model="taskName"
                placeholder="Insert your task"
                autofocus=true>
-        <button type="submit" class="p-0 size-32 bg-none" :disabled="!checkTask(taskName)">
+
+        <button type="submit" class="p-0 size-32 bg-none" :disabled="!checkTask(taskName) || taskName === ''">
           <icon class="bi-floppy-fill fs-18"></icon>
         </button>
       </div>
@@ -32,6 +35,7 @@
           :taskAlreadyExists="!checkTask(taskName)"
           :taskName="taskName"
           :checked="false"
+          :isPreview="true"
 
           v-on:click.prevent
     />
