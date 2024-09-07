@@ -1,4 +1,4 @@
-[screenshot]([public/screenshott.png](https://github.com/bebagodfried/vue.js_codelab/blob/8cc0b59745c411aa87c8e4333f01db7b912573f0/public/screenshott.png)
+[screenshot](https://github.com/bebagodfried/vue.js_codelab/blob/8cc0b59745c411aa87c8e4333f01db7b912573f0/public/screenshott.png)
 
 # codelab
 
